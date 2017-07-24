@@ -7,12 +7,14 @@
     "tap-notify": "./distributions/cli.js"
   },
   "scripts": {
+    "start": "npm run babel",
     "babel": "babel ./sources --out-dir ./distributions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "axross <kou@axross.org> (http://axross.me/)",
   "license": "MIT",
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "node-notifier": "^4.3.1",
     "tap-parser": "^1.2.2",
     "through2": "^2.0.0"
