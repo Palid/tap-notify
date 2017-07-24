@@ -63,13 +63,6 @@ function tapFailureLines(pollutedTap) {
   });
 }
 
-// some funky stuff to make newlines work right in growl
-function growlFormat(lines) {
-  return lines.map(function (x) {
-    return '"' + x + '"';
-  }).join("$'\n'");
-}
-
 function jsErrorRegex() {
   return (/^\w+Error:|    at /
   );

@@ -36,11 +36,6 @@ function tapFailureLines(pollutedTap) {
     .map(x => x.replace(/^    at:.*\/([^\/]+)\)/, 'at $1'))
 }
 
-// some funky stuff to make newlines work right in growl
-function growlFormat(lines) {
-  return lines.map(x => `"${x}"`).join("$'\n'");
-}
-
 function jsErrorRegex() {
   return /^\w+Error:|    at /
 }

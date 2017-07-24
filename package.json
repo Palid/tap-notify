@@ -1,6 +1,6 @@
 {
   "name": "tap-notify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "the Notifier for OS X, Linux and Windows as TAP reporter",
   "main": "./distributions/index.js",
   "bin": {
